@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2b04912ecd.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <section id="banner">
+
+
+        <img src="logo.png" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+        </nav>
+
+
+        <div class="banner-text">
+            
+            <h1>Licence & Identification System</h1>
+            <p>A digitized licence system</p>
+            <div class="banner-btn">
+                <a href="userProfile.html"><span></span>User</a>
+                <a href="exeProfile.html"><span></span>Executor</a>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+    
+
+    <script>
+        let signupBtn = document.getElementById('signupBtn');
+        let signinBtn = document.getElementById('signinBtn');
+        let nameField = document.getElementById('nameField');
+        let nidField = document.getElementById('nidField');
+        let title = document.getElementById('title');
+        
+        
+        signinBtn.onclick = function(){
+            nameField.style.maxHeight="0";
+            nidField.style.maxHeight="0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+
+
+        }
+        signupBtn.onclick = function(){
+            nameField.style.maxHeight="60px";
+            nidField.style.maxHeight="60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+
+
+        }
+
+
+    </script>
+
+    </script>
+
+    </script>
+
+    </script>
+    
+    
+    
+</body>
+</html>
